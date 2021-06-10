@@ -60,9 +60,6 @@
 
 <script>
 	import md5 from 'js-md5';
-	import  { inputCheck, checkPassword } from '@/common/js/inputCheck.js';
-	import {error} from '@/common/js/errorTips.js'
-	import { getPhoneCode, validataCode, userRegister } from '@/common/api/quickRegister.js';
 	
 	export default {
 		data() {

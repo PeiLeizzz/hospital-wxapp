@@ -17,6 +17,25 @@
 		}
 
     ],
+	"subPackages": [
+		{
+			"root": "pagesB",
+			"pages": [
+				{
+					"path": "pages/center/login/login",
+					"style": {}
+				},
+				{
+					"path": "pages/center/login/quickRegister/quickRegister",
+					"style": {}
+				},
+				{
+					"path": "pages/center/login/fotgotPassword/fotgotPassword",
+					"style": {}
+				}
+			]
+		}
+	],
 	"tabBar": {
 		"selectedColor": "#7EC0EE",
 		"borderStyle": "white",
