@@ -52,8 +52,6 @@
             "sdkConfigs" : {}
         }
     },
-    /* 快应用特有相关 */
-    "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
         "appid" : "wx7d4ba9c045463b7b",
@@ -62,23 +60,11 @@
         },
         "usingComponents" : true
     },
-    "mp-alipay" : {
-        "appid" : "2021001104639268",
-        "usingComponents" : true
-    },
-    "mp-baidu" : {
-        "usingComponents" : true
-    },
-    "mp-toutiao" : {
-        "usingComponents" : true
-    },
     "h5" : {
         "router" : {
             "mode" : "history",
             "base" : "/Yang-appoint/"
         },
-        "title" : "挂号系统"
+        "title" : "互联网医院"
     }
 }
-// "domain" : "https://www.funkingka.cn/Yang-appoint"
-

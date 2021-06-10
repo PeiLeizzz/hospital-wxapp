@@ -13,8 +13,6 @@
 </template>
 
 <script>
-	import { getPasswordCode } from '@/common/api/password.js'
-	import {validataCode} from '@/common/api/quickRegister.js'
 	
 	export default {
 		data() {

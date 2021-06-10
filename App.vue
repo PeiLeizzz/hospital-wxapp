@@ -14,7 +14,6 @@
 </script>
 
 <style>
-	/*每个页面公共css */
 	@import './common/style/weui.wxss';
 	@import "./common/style/colorui/main.css";
 	@import "./common/style/colorui/icon.css";

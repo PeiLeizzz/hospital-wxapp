@@ -48,13 +48,6 @@
 </template>
 
 <script>
-	import { userLogin } from '@/common/api/quickRegister.js';
-	import  { inputCheck } from '@/common/js/inputCheck.js';
-	import { setToken, getToken } from '@/common/utils/auth.js'
-	import md5 from 'js-md5';
-	import {error} from '@/common/js/errorTips.js'
-	import {getUserCardInfo} from '@/common/api/userInfo.js'
-	
 	export default {
 		data() {
 			return {

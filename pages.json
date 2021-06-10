@@ -14,123 +14,9 @@
 			"style": {
 				"enablePullDownRefresh":true
 			}
-		},
-		{
-			"path": "pages/home/appointmentHome/selectDepartment/selectDepartment",
-			"style": {}
 		}
 
     ],
-	"subPackages": [{
-			"root": "pagesA",
-			"pages": [{
-				"path": "pages/awaitingQueue/awaitingQueue",
-				"style": {}
-			}, {
-				"path": "pages/creditDetail/creditDetail",
-				"style": {}
-			}, {
-				"path": "pages/appointRecord/appointRecord",
-				"style": {
-					"navigationBarTextStyle": "white",
-					"navigationBarTitleText": "挂号记录",
-					"navigationBarBackgroundColor": "#7EC0EE"
-				}
-			}, {
-				"path": "pages/treatRecord/treatRecord",
-				"style": {
-					"navigationBarTextStyle": "white",
-					"navigationBarTitleText": "就诊记录",
-					"navigationBarBackgroundColor": "#7EC0EE"
-				}
-			}, {
-				"path": "pages/treatRecord/treatRecordDetail/treatRecordDetail",
-				"style": {
-					"navigationBarTextStyle": "white",
-					"navigationBarTitleText": "就诊记录详情",
-					"navigationBarBackgroundColor": "#7EC0EE"
-				}
-			}, {
-				"path": "pages/aboutUs/aboutUs",
-				"style": {
-					"navigationBarTextStyle": "white",
-					"navigationBarTitleText": "关于我们",
-					"navigationBarBackgroundColor": "#7EC0EE"
-				}
-			},{
-			    "path" : "pages/creditDetail/creditAppointDetail/creditAppointDetail",
-			    "style" : {}
-			}]
-		},
-		{
-			"root": "pagesB",
-			"pages": [{
-					"path": "pages/center/login/login",
-					"style": {}
-				},
-				{
-					"path": "pages/center/login/quickRegister/quickRegister",
-					"style": {}
-				},
-				{
-					"path": "pages/center/login/fotgotPassword/fotgotPassword",
-					"style": {}
-				},
-				{
-					"path": "pages/center/addCard/addCard",
-					"style": {
-						"navigationBarTextStyle": "white",
-						"navigationBarTitleText": "添加就诊卡",
-						"navigationBarBackgroundColor": "#7EC0EE"
-					}
-				},
-				{
-					"path": "pages/center/addCard/editCard/editCard",
-					"style": {
-						"navigationBarTextStyle": "white",
-						"navigationBarTitleText": "修改就诊卡",
-						"navigationBarBackgroundColor": "#7EC0EE"
-					}
-				}, {
-					"path": "pages/appointPages/timeDoctor/timeDoctor",
-					"style": {}
-				}, {
-					"path": "pages/appointPages/doctorAppointDetail/doctorAppointDetail",
-					"style": {
-						"navigationBarTextStyle": "white",
-						"navigationBarTitleText": "医生号源情况",
-						"navigationBarBackgroundColor": "#7EC0EE"
-					}
-				}, {
-					"path": "pages/appointPages/doctorAppointDetail/insureAppoint/insureAppoint",
-					"style": {
-						"navigationBarTextStyle": "white",
-						"navigationBarTitleText": "确认号源信息",
-						"navigationBarBackgroundColor": "#7EC0EE"
-					}
-				}, {
-					"path": "pages/center/cardList/cardList",
-					"style": {
-						"navigationBarTextStyle": "white",
-						"navigationBarTitleText": "就诊卡队列",
-						"navigationBarBackgroundColor": "#7EC0EE"
-					}
-				}, {
-					"path": "pages/appointPages/doctorList/doctorList",
-					"style": {}
-				}, {
-					"path": "pages/center/baseInfo/baseInfo",
-					"style": {}
-				}
-			]
-		}
-	],
-	"preloadRule": {
-		"pages/photoLogin/photoLogin": {
-			"network": "all",
-			"packages": ["__APP__"]
-		}
-	},
 	"tabBar": {
 		"selectedColor": "#7EC0EE",
 		"borderStyle": "white",
@@ -151,7 +37,7 @@
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "医院挂号系统",
+		"navigationBarTitleText": "互联网医院",
 		"navigationBarBackgroundColor": "#7EC0EE",
 		"backgroundColor": "#F2F2F2"
 	}

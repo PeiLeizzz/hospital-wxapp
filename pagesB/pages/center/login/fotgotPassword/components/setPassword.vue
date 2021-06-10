@@ -19,9 +19,6 @@
 
 <script>
 	import md5 from 'js-md5';
-	import {updatePassword } from '@/common/api/password.js';
-	import  { inputCheck, checkPassword } from '@/common/js/inputCheck.js';
-	import {error} from '@/common/js/errorTips.js'
 	
 	export default{
 		data() {

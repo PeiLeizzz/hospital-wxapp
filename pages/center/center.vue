@@ -65,9 +65,6 @@
 </template>
 
 <script>
-	import { error } from '@/common/js/errorTips.js'
-	import { getUserBaseInfo } from '@/common/api/userInfo.js'
-	import {getUserCardInfo} from '@/common/api/userInfo.js'
 	import md5 from 'js-md5'
 	
 	export default {
@@ -97,136 +94,136 @@
 				})
 			},
 			
-			// 跳转到就诊卡队列
-			toCardList:function() {
-				if(this.isAlreadyLogin) {
-					uni.navigateTo({
-						url: '/pagesB/pages/center/cardList/cardList'
-					})
-				} else {
-					error('登录')
-				} // end if
-			},
-			// 跳转到候诊队列
-			toAwaitingQueue: function() {
-				if(this.isAlreadyLogin) {
-					uni.navigateTo({
-						url: '/pagesA/pages/awaitingQueue/awaitingQueue'
-					})
-				} else {
-					error('登录')
-				} // end if
+			// // 跳转到就诊卡队列
+			// toCardList:function() {
+			// 	if(this.isAlreadyLogin) {
+			// 		uni.navigateTo({
+			// 			url: '/pagesB/pages/center/cardList/cardList'
+			// 		})
+			// 	} else {
+			// 		error('登录')
+			// 	} // end if
+			// },
+			// // 跳转到候诊队列
+			// toAwaitingQueue: function() {
+			// 	if(this.isAlreadyLogin) {
+			// 		uni.navigateTo({
+			// 			url: '/pagesA/pages/awaitingQueue/awaitingQueue'
+			// 		})
+			// 	} else {
+			// 		error('登录')
+			// 	} // end if
 				
-			},
-			// 跳转到信用详情
-			toCreditDetail: function() {
-				if(this.isAlreadyLogin) {
-					uni.navigateTo({
-						url: '/pagesA/pages/creditDetail/creditDetail'
-					})
-				} else {
-					error('登录')
-				} // end if
+			// },
+			// // 跳转到信用详情
+			// toCreditDetail: function() {
+			// 	if(this.isAlreadyLogin) {
+			// 		uni.navigateTo({
+			// 			url: '/pagesA/pages/creditDetail/creditDetail'
+			// 		})
+			// 	} else {
+			// 		error('登录')
+			// 	} // end if
 				
-			},
-			// 跳转到挂号记录
-			toAppointRecord: function() {
-				if(this.isAlreadyLogin) {
-					uni.navigateTo({
-						url: '/pagesA/pages/appointRecord/appointRecord'
-					})
-				} else {
-					error('登录')
-				} // end if
+			// },
+			// // 跳转到挂号记录
+			// toAppointRecord: function() {
+			// 	if(this.isAlreadyLogin) {
+			// 		uni.navigateTo({
+			// 			url: '/pagesA/pages/appointRecord/appointRecord'
+			// 		})
+			// 	} else {
+			// 		error('登录')
+			// 	} // end if
 				
-			},
-			// 跳转到就诊记录
-			toTreatRecord: function() {
-				if(this.isAlreadyLogin) {
-					uni.navigateTo({
-						url: '/pagesA/pages/treatRecord/treatRecord'
-					})
-				} else {
-					error('登录')
-				} // end if
+			// },
+			// // 跳转到就诊记录
+			// toTreatRecord: function() {
+			// 	if(this.isAlreadyLogin) {
+			// 		uni.navigateTo({
+			// 			url: '/pagesA/pages/treatRecord/treatRecord'
+			// 		})
+			// 	} else {
+			// 		error('登录')
+			// 	} // end if
 				
-			},
-			// 跳转到关于我们页面
-			toAboutUs: function() {
-				uni.navigateTo({
-					url: '/pagesA/pages/aboutUs/aboutUs'
-				})
-			},
-			// 跳转到基本信息页面
-			toBaseInfo: function() {
-				uni.navigateTo({
-					url: '/pagesB/pages/center/baseInfo/baseInfo'
-				})
-			},
-			// 退出登录
-			outLogin: function() {
-				let that = this
-				uni.showModal({
-				    title: '退出登录',
-				    content: '是否退出登录？',
-				    confirmText: "确认",
-				    cancelText: "取消",
-				    success: function (res) {
-				        if (res.confirm) {
-				            uni.removeStorageSync('isAlreadyLogin');
-							uni.removeStorageSync('cardID');
-							that.isAlreadyLogin = false
-				        }else{
+			// },
+			// // 跳转到关于我们页面
+			// toAboutUs: function() {
+			// 	uni.navigateTo({
+			// 		url: '/pagesA/pages/aboutUs/aboutUs'
+			// 	})
+			// },
+			// // 跳转到基本信息页面
+			// toBaseInfo: function() {
+			// 	uni.navigateTo({
+			// 		url: '/pagesB/pages/center/baseInfo/baseInfo'
+			// 	})
+			// },
+			// // 退出登录
+			// outLogin: function() {
+			// 	let that = this
+			// 	uni.showModal({
+			// 	    title: '退出登录',
+			// 	    content: '是否退出登录？',
+			// 	    confirmText: "确认",
+			// 	    cancelText: "取消",
+			// 	    success: function (res) {
+			// 	        if (res.confirm) {
+			// 	            uni.removeStorageSync('isAlreadyLogin');
+			// 				uni.removeStorageSync('cardID');
+			// 				that.isAlreadyLogin = false
+			// 	        }else{
 							
-				        }
-				    }
-				});
-			},
-			// 获取用户信息
-			getUserInfo: function() {
-				uni.showLoading({
-					title: '信息加载中'
-				})
-				getUserBaseInfo().then(res => {
-					const data = res.data.data.basicInfo
-					this.userBaseInfo.name = data.name
-					this.userBaseInfo.avatarUrl = data.avatarUrl
-					this.userBaseInfo.phone = data.phone
-					// 存储账户id，方便 后面调用
-					uni.setStorageSync('accountID', res.data.data.account.id) 
-					uni.setStorageSync('userID', data.id)
-					this.getMyselfCardInfo()
-					uni.setStorageSync('userInfo', JSON.stringify(this.userBaseInfo))
-					uni.hideLoading()
-				}).catch(() => {
-					uni.hideLoading()
-					error('获取用户基本信息失败')
-				})
-			},
-			// 首先获取自己的就诊卡信息
-			getMyselfCardInfo: function() {
-				let that = this
-				getUserCardInfo(uni.getStorageSync('accountID')).then(res => {
-					if(res.data.code === 200) {
-						const data = res.data.data
-						if( data.length > 0) {
-							data.forEach(function(item, index){
-								// 获取自己的就诊卡号
-								if(item.type === 0) {
-									uni.setStorageSync('cardID', item.id)
-									that.cardID = item.id
-									wx.stopPullDownRefresh()
-									return
-								}
-							})
-						}
-						uni.hideLoading()
-					}
-				}).catch(() => {
-					uni.hideLoading()
-					error('网络')
-				})
-			},
+			// 	        }
+			// 	    }
+			// 	});
+			// },
+			// // 获取用户信息
+			// getUserInfo: function() {
+			// 	uni.showLoading({
+			// 		title: '信息加载中'
+			// 	})
+			// 	getUserBaseInfo().then(res => {
+			// 		const data = res.data.data.basicInfo
+			// 		this.userBaseInfo.name = data.name
+			// 		this.userBaseInfo.avatarUrl = data.avatarUrl
+			// 		this.userBaseInfo.phone = data.phone
+			// 		// 存储账户id，方便 后面调用
+			// 		uni.setStorageSync('accountID', res.data.data.account.id) 
+			// 		uni.setStorageSync('userID', data.id)
+			// 		this.getMyselfCardInfo()
+			// 		uni.setStorageSync('userInfo', JSON.stringify(this.userBaseInfo))
+			// 		uni.hideLoading()
+			// 	}).catch(() => {
+			// 		uni.hideLoading()
+			// 		error('获取用户基本信息失败')
+			// 	})
+			// },
+			// // 首先获取自己的就诊卡信息
+			// getMyselfCardInfo: function() {
+			// 	let that = this
+			// 	getUserCardInfo(uni.getStorageSync('accountID')).then(res => {
+			// 		if(res.data.code === 200) {
+			// 			const data = res.data.data
+			// 			if( data.length > 0) {
+			// 				data.forEach(function(item, index){
+			// 					// 获取自己的就诊卡号
+			// 					if(item.type === 0) {
+			// 						uni.setStorageSync('cardID', item.id)
+			// 						that.cardID = item.id
+			// 						wx.stopPullDownRefresh()
+			// 						return
+			// 					}
+			// 				})
+			// 			}
+			// 			uni.hideLoading()
+			// 		}
+			// 	}).catch(() => {
+			// 		uni.hideLoading()
+			// 		error('网络')
+			// 	})
+			// },
 		},
 		onShow() {
 			console.log(md5("admin"))
