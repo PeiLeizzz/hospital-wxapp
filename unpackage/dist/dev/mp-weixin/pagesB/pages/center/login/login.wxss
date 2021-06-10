@@ -47,29 +47,29 @@
   background: #FFFEF5;
 }
 .tips-box .tips-inbox {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-            align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .tips-box .tips-inbox .icon {
-      width: 60rpx;
-      height: 60rpx;
-      margin-right: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
 }
 .tips-box .tips-inbox .tips-text {
-      font-size: 17px;
-      font-weight: 500;
-      color: #A6A6A6;
+  font-size: 17px;
+  font-weight: 500;
+  color: #A6A6A6;
 }
 .gray-border-box {
   width: 90%;
@@ -97,15 +97,15 @@
   margin-top: 10rpx;
 }
 .blue-column-border-box .blue-border {
-    width: 5%;
-    height: 50rpx;
-    border-left: 6px solid #7EC0EE;
+  width: 5%;
+  height: 50rpx;
+  border-left: 6px solid #7EC0EE;
 }
 .blue-column-border-box .blue-text {
-    width: 80%;
-    font-size: 18px;
-    font-weight: bold;
-    color: #7EC0EE;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7EC0EE;
 }
 /**
  * 关于表单的scss
@@ -166,29 +166,29 @@
   background: #FFFEF5;
 }
 .tips-box .tips-inbox {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-            align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .tips-box .tips-inbox .icon {
-      width: 60rpx;
-      height: 60rpx;
-      margin-right: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
 }
 .tips-box .tips-inbox .tips-text {
-      font-size: 17px;
-      font-weight: 500;
-      color: #A6A6A6;
+  font-size: 17px;
+  font-weight: 500;
+  color: #A6A6A6;
 }
 .gray-border-box {
   width: 90%;
@@ -216,15 +216,15 @@
   margin-top: 10rpx;
 }
 .blue-column-border-box .blue-border {
-    width: 5%;
-    height: 50rpx;
-    border-left: 6px solid #7EC0EE;
+  width: 5%;
+  height: 50rpx;
+  border-left: 6px solid #7EC0EE;
 }
 .blue-column-border-box .blue-text {
-    width: 80%;
-    font-size: 18px;
-    font-weight: bold;
-    color: #7EC0EE;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7EC0EE;
 }
 page {
   width: 100%;
@@ -241,9 +241,9 @@ page {
           align-items: center;
 }
 .input-inbox .input {
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
 }
 .password-row-box {
   -webkit-box-align: center;
@@ -256,14 +256,14 @@ page {
   align-items: center;
 }
 .password-row-box .input {
-    width: 83%;
-    height: 90%;
-    margin-left: 5%;
+  width: 83%;
+  height: 90%;
+  margin-left: 5%;
 }
 .password-row-box .eye-icon {
-    width: 17%;
-    width: 50rpx;
-    height: 50rpx;
+  width: 17%;
+  width: 50rpx;
+  height: 50rpx;
 }
 .button {
   margin-top: 50rpx;
@@ -287,23 +287,23 @@ page {
           justify-content: space-between;
 }
 .enroll-changepassword-box .left {
-    width: 50%;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-            justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
 }
 .enroll-changepassword-box .right {
-    width: 50%;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-            justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
 }
 

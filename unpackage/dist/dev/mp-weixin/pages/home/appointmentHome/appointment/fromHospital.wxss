@@ -47,29 +47,29 @@
   background: #FFFEF5;
 }
 .tips-box .tips-inbox {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-            align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .tips-box .tips-inbox .icon {
-      width: 60rpx;
-      height: 60rpx;
-      margin-right: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
 }
 .tips-box .tips-inbox .tips-text {
-      font-size: 17px;
-      font-weight: 500;
-      color: #A6A6A6;
+  font-size: 17px;
+  font-weight: 500;
+  color: #A6A6A6;
 }
 .gray-border-box {
   width: 90%;
@@ -97,15 +97,15 @@
   margin-top: 10rpx;
 }
 .blue-column-border-box .blue-border {
-    width: 5%;
-    height: 50rpx;
-    border-left: 6px solid #7EC0EE;
+  width: 5%;
+  height: 50rpx;
+  border-left: 6px solid #7EC0EE;
 }
 .blue-column-border-box .blue-text {
-    width: 80%;
-    font-size: 18px;
-    font-weight: bold;
-    color: #7EC0EE;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7EC0EE;
 }
 .row-50-width {
   width: 100%;
@@ -119,68 +119,68 @@
           flex-direction: row;
 }
 .row-50-width .left-right-half-box {
-    width: 50%;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-            flex-direction: column;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
 }
 .row-50-width .left-right-half-box .left-right-inbox {
-      width: 91%;
-      height: 100%;
-      margin: 0 auto;
-      background: #FFFFFF;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-              flex-direction: column;
-      border: 1px solid #BBBBBB;
-      border-radius: 8px;
-      padding: 10rpx;
-      margin-top: 20rpx;
+  width: 91%;
+  height: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px;
+  padding: 10rpx;
+  margin-top: 20rpx;
 }
 .row-50-width .left-right-half-box .left-right-inbox .row-width {
-        width: 100%;
-        height: 70rpx;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-                align-items: center;
+  width: 100%;
+  height: 70rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .row-50-width .left-right-half-box .left-right-inbox .row-width .icon {
-          width: 50rpx;
-          height: 50rpx;
-          margin-right: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
 }
 .row-50-width .left-right-half-box .left-right-inbox .row-width .hospital-text {
-          font-size: 15px;
-          font-weight: bold;
-          color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
 }
 .row-50-width .left-right-half-box .left-right-inbox .row-width .blue-title {
-          width: 30%;
-          font-size: 16px;
-          font-weight: 400;
-          color: #7EC0EE;
-          margin-right: 2%;
+  width: 30%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7EC0EE;
+  margin-right: 2%;
 }
 .row-50-width .left-right-half-box .left-right-inbox .row-width .address-phone-text {
-          width: 68%;
-          font-size: 16px;
-          font-weight: 400;
-          color: #A6A6A6;
+  width: 68%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #A6A6A6;
 }
 

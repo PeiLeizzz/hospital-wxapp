@@ -1,6 +1,6 @@
 {
     "name" : "appointment-wxapp",
-    "appid" : "__UNI__AAB23D5",
+    "appid" : "__UNI__0D0C775",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -56,7 +56,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx0293d07fce2f8b8c",
+        "appid" : "wx7d4ba9c045463b7b",
         "setting" : {
             "urlCheck" : false
         },

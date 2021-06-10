@@ -7,8 +7,8 @@
 		"urlCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.2",
-	"appid": "wx0293d07fce2f8b8c",
+	"libVersion": "",
+	"appid": "wx7d4ba9c045463b7b",
 	"projectname": "appointment-wxapp",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
