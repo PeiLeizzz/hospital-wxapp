@@ -124,12 +124,12 @@
 	
 	.area {
 		display: inline-block;
-		width: 50%;
+		width: 40%;
 	}
 	
 	.select-content {
 		display: inline-block;
-		width: 45%;
+		width: 55%;
 	}
 	
 	.no-content {
