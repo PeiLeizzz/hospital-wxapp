@@ -34,19 +34,54 @@
 		<view class="consulting-type row-box clearfix">
 			<view>
 				<navigator url="">
-					<icon class="iconfont icon-zhuanjia"></icon>
-					<text>专家咨询</text>
+					<!-- <icon class="iconfont icon-zhuanjia"></icon> -->
+					<text>自助核酸检测</text>
 				</navigator>
 			</view>
 
 			<view>
 				<navigator url="">
-					<icon class="iconfont icon-Micon-zixun"></icon>
-					<text>快速咨询</text>
+					<!-- <icon class="iconfont icon-Micon-zixun"></icon> -->
+					<text>核酸报告申请</text>
 				</navigator>
 			</view>
 		</view>
 
+		<view class="four-list row-box clearfix">
+			<view class="four-list-tag">
+				<text>热门功能</text>
+				<navigator url="" class="four-list-all">
+					<text>更多</text>
+					<icon class="iconfont icon-fangxiangyou"></icon>
+				</navigator>
+			</view>
+
+			<view class="four-list-icon">
+				<view v-for="item in hotFunction" :key="key">
+					<navigator :url="item.url">
+						<icon class="iconfont" :class="'icon-' + item.icon"></icon>
+						<text>{{item.tag}}</text>
+					</navigator>
+				</view>
+			</view>
+		</view>
+		
+		<view style="margin-top: 20rpx;" class="consulting-type row-box clearfix">
+			<view>
+				<navigator url="">
+					<!-- <icon class="iconfont icon-zhuanjia"></icon> -->
+					<text>诊间缴费</text>
+				</navigator>
+			</view>
+		
+			<view>
+				<navigator url="">
+					<!-- <icon class="iconfont icon-Micon-zixun"></icon> -->
+					<text>检查预约</text>
+				</navigator>
+			</view>
+		</view>
+		
 		<view class="four-list row-box clearfix">
 			<view class="four-list-tag">
 				<text>按科室选择</text>
@@ -66,6 +101,7 @@
 			</view>
 		</view>
 
+
 		<view class="four-list row-box clearfix">
 			<view class="four-list-tag">
 				<text>推荐医生</text>
@@ -83,6 +119,35 @@
 				<view>
 					<image src="/static/appointment/avatar_0.jpg"></image>
 					<text>医生2</text>
+				</view>
+			</view>
+		</view>
+		
+		<view class="four-list row-box clearfix">
+			<view class="four-list-tag">
+				<text>健康服务</text>
+				<view class="four-list-all">
+					<text>更多</text>
+					<icon class="iconfont icon-fangxiangyou"></icon>
+				</view>
+			</view>
+		
+			<view class="four-list-icon">
+				<view>
+					<image src="/static/appointment/avatar_1.jpg"></image>
+					<text>名医直播</text>
+				</view>
+				<view>
+					<image src="/static/appointment/avatar_0.jpg"></image>
+					<text>在线探视</text>
+				</view>
+				<view>
+					<image src="/static/appointment/avatar_1.jpg"></image>
+					<text>慢病管理</text>
+				</view>
+				<view>
+					<image src="/static/appointment/avatar_0.jpg"></image>
+					<text>用药咨询</text>
 				</view>
 			</view>
 		</view>
@@ -119,6 +184,33 @@
 					tag: "科室8",
 					icon: "wrong color8"
 				}],
+				hotFunction: [{
+					tag: "预约挂号",
+					icon: "pifuke color1"
+				}, {
+					tag: "线上复诊",
+					icon: "tuina color2"
+				}, {
+					tag: "健康咨询",
+					icon: "guke color3"
+				}, {
+					tag: "互联网+护理",
+					icon: "erbihouke color4"
+				}, {
+					tag: "检验报告",
+					icon: "jianyan color5",
+					
+				}, {
+					tag: "检查报告",
+					icon: "jianyan color5",
+					url: "../../../pagesB/pages/inspectionReport/inspectionReport"
+				},{
+					tag: "病理报告",
+					icon: "Bchaoyuyue-K color6"
+				}, {
+					tag: "核酸报告",
+					icon: "wrong color7"
+				}]
 			}
 		},
 		methods: {

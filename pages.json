@@ -2,11 +2,11 @@
 	"pages": [
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/photoLogin/photoLogin",
+			"path": "pages/home/appointmentHome/appointmentHome",
 			"style": {}
 		},
 		{
-			"path": "pages/home/appointmentHome/appointmentHome",
+			"path": "pages/photoLogin/photoLogin",
 			"style": {}
 		},
 		{
@@ -15,7 +15,6 @@
 				"enablePullDownRefresh":true
 			}
 		}
-
     ],
 	"subPackages": [
 		{
@@ -32,6 +31,18 @@
 				{
 					"path": "pages/center/login/fotgotPassword/fotgotPassword",
 					"style": {}
+				},
+				{
+				    "path" : "pages/inspectionReport/inspectionReport",
+				    "style" : {
+						"navigationBarTitleText": "检查报告"
+					}
+				},
+				{
+				    "path" : "pages/reportQuery/reportQuery",
+				    "style" : {
+						"navigationBarTitleText": "检验报告查询"
+					}
 				}
 			]
 		}
@@ -44,7 +55,7 @@
 				"pagePath": "pages/home/appointmentHome/appointmentHome",
 				"iconPath": "static/tabbar/appoint-gray.png",
 				"selectedIconPath": "static/tabbar/appoint-blue.png",
-				"text": "挂号"
+				"text": "首页"
 			},
 			{
 				"pagePath": "pages/center/center",

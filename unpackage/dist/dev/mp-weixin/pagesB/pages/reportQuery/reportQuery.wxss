@@ -1,0 +1,56 @@
+
+.horizonal-tab{
+	font-size: 35rpx;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	padding-left: 20rpx;
+}
+.horizonal-tab .active{
+	color: #007AFF;
+}
+.scroll-tab{
+	white-space: nowrap; /* 必要，导航栏才能横向*/
+	border-bottom: 1rpx solid #eee;
+	/* text-align: center; */
+}
+.scroll-tab-item{
+	display: inline-block; /* 必要，导航栏才能横向*/
+	margin: 20rpx 30rpx 0 30rpx;
+}
+.active .scroll-tab-line{
+	border-bottom: 3rpx solid #007AFF;
+	border-top: 3rpx solid #007AFF;
+	border-radius: 20rpx;
+	width: 100rpx;
+}
+.select-area {
+	margin: 20rpx;
+	border-radius: 20rpx;
+	padding: 20rpx 20rpx 10rpx;
+	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+	height: 80rpx;
+	font-size: 35rpx;
+	line-height: 80rpx;
+}
+.area {
+	display: inline-block;
+	width: 50%;
+}
+.select-content {
+	display: inline-block;
+	width: 45%;
+}
+.no-content {
+	height: 600rpx;
+	text-align: center;
+}
+.no-content-text-1 {
+	margin-top: 300rpx;
+	margin-bottom: 20rpx;
+	font-size: 35rpx;
+}
+.no-content-text-2 {
+	font-size: 20rpx;
+	color: #CCCCCC;
+}
+
